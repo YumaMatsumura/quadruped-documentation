@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Quadruped Documentation
+site_url: https://yumamatsumura.github.io/quadruped-documentation/
+repo_url: https://github.com/YumaMatsumura/quadruped-documentation
+edit_uri: edit/main/docs/
+docs_dir: docs
+copyright: Copyright &copy; 2026 Yuma Matsumura
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - content.code.copy
+    - content.action.edit
+  icon:
+    logo: fontawesome/solid/robot
+    repo: fontawesome/brands/github
+  language: ja
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  palette:
+    primary: white
+
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - awesome-pages
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: "#"
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
