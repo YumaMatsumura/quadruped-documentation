@@ -2,8 +2,3 @@ title: 電源設計
 
 nav:
   - index.md
-  - power-budget.md
-  - dc-dc.md
-  - battery.md
-  - protection.md
-  - measurement.md
