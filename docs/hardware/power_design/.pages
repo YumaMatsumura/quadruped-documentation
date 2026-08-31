@@ -1,0 +1,9 @@
+title: 電源設計
+nav:
+  - 概要: index.md
+  - 電力・エネルギー計算: calculation.md
+  - 電力見積もり: power-budget.md
+  - DC-DCコンバータの選定: dc-dc-selection.md
+  - バッテリの選定: battery-selection.md
+  - 保護・配線部品の選定: protection.md
+  - 実機による設計値の妥当性確認: validation.md

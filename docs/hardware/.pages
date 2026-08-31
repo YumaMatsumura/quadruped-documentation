@@ -2,5 +2,5 @@ title: ハードウェア
 
 nav:
   - system-configuration
-  - power
+  - power_design
   - bom.md
